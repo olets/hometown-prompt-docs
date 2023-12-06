@@ -14,10 +14,10 @@ Shell plugin manager is the recommended installation method.
 
 ## Manual
 
-Either clone this repo and add `source path/to/hometown-prompt.zsh` to your `.zshrc`, or
+Either clone this repo and add `source path/to/hometown.zsh-theme` to your `.zshrc`, or
 
 1. Download [the latest Hometown Prompt binary](https://github.com/olets/hometown-prompt/releases/latest)
-1. Put the file `hometown-prompt.zsh` in a directory in your `PATH`
+1. Put the file `hometown.zsh-theme` in a directory in your `PATH`
 
 Then restart zsh:
 
