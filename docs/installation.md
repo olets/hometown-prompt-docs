@@ -1,16 +1,24 @@
 # Installation
 
-Shell plugin manager is the recommended installation method.
+## Package
 
-## With a shell plugin manager
+Hometown is available on Homebrew. Run
 
-1. Install `olets/hometown-prompt` with a zsh plugin manager. Each has their own way of doing things. See your package manager's documentation or the [zsh plugin manager plugin installation procedures gist](https://gist.github.com/olets/06009589d7887617e061481e22cf5a4a).
+```shell:no-line-numbers
+brew install olets/tap/hometown-prompt
+```
 
-   After adding the plugin to the manager, restart zsh:
+and follow the post-install instructions logged to the terminal.
 
-   ```shell:no-line-numbers
-   exec zsh
-   ```
+## Plugin
+
+You can install Hometown with a zsh plugin manager. Each has their own way of doing things. See your package manager's documentation or the [zsh plugin manager plugin installation procedures gist](https://gist.github.com/olets/06009589d7887617e061481e22cf5a4a).
+
+After adding the plugin to the manager, it will be available in all new terminals. To use it in an already-open terminal, restart zsh in that terminal:
+
+```shell:no-line-numbers
+exec zsh
+```
 
 ## Manual
 
