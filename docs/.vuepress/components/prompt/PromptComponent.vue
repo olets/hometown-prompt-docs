@@ -57,7 +57,7 @@ export default {
   >
     <div
       :style="`${
-        getValue(store.options.data.HOMETOWN_PROMPT_NO_LINEBREAK_BEFORE_GIT_REF)
+        getValue(store.options.data.HOMETOWN_NO_LINEBREAK_BEFORE_GIT_REF)
           ? 'display: flex;'
           : ''
       } gap: var(--prompt-gap)`"
@@ -77,17 +77,11 @@ export default {
         <GitRefComponent />
 
         <div
-          v-if="
-            !getValue(
-              store.options.data.HOMETOWN_PROMPT_LINEBREAK_AFTER_GIT_REF
-            )
-          "
+          v-if="!getValue(store.options.data.HOMETOWN_LINEBREAK_AFTER_GIT_REF)"
           style="display: flex; gap: var(--prompt-gap)"
         >
           <StatusExtendedComponent
-            v-if="
-              getValue(store.options.data.HOMETOWN_PROMPT_SHOW_EXTENDED_STATUS)
-            "
+            v-if="getValue(store.options.data.HOMETOWN_SHOW_EXTENDED_STATUS)"
           />
 
           <StatusComponent />
@@ -98,13 +92,11 @@ export default {
     </div>
 
     <div
-      v-if="
-        getValue(store.options.data.HOMETOWN_PROMPT_LINEBREAK_AFTER_GIT_REF)
-      "
+      v-if="getValue(store.options.data.HOMETOWN_LINEBREAK_AFTER_GIT_REF)"
       style="display: flex; gap: var(--prompt-gap)"
     >
       <StatusExtendedComponent
-        v-if="getValue(store.options.data.HOMETOWN_PROMPT_SHOW_EXTENDED_STATUS)"
+        v-if="getValue(store.options.data.HOMETOWN_SHOW_EXTENDED_STATUS)"
       />
 
       <StatusComponent />

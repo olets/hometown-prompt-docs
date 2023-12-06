@@ -21,6 +21,6 @@ export default {
 
 <template>
   <PromptSegmentComponent
-    :text="getValue(store.options.data.HOMETOWN_PROMPT_CUSTOM) || ''"
+    :text="getValue(store.options.data.HOMETOWN_CUSTOM) || ''"
   />
 </template>

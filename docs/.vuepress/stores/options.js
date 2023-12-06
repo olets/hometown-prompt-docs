@@ -3,7 +3,7 @@ import configFromState from "../utils/configFromState.js";
 
 export const optionsData = {
   // GROUP: Hometown Prompt content
-  HOMETOWN_PROMPT_CUSTOM: {
+  HOMETOWN_CUSTOM: {
     description:
       "Displayed at the start of the prompt, before the working directory. In the terminal, this is printed with <a href='https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html'>prompt expansion</a> with <code>PROMPT_SUBST</code> and <code>PROMPT_PERCENT</code>. Need it to be dynamic? Define it in a <code>precmd</code> hook.",
     group: "Hometown Prompt content",
@@ -12,7 +12,7 @@ export const optionsData = {
       "In the terminal, this is printed with <a href='https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html'>prompt expansion</a> with <code>PROMPT_SUBST</code> and <code>PROMPT_PERCENT</code>",
     type: "string",
   },
-  HOMETOWN_PROMPT_SHOW_EXTENDED_STATUS: {
+  HOMETOWN_SHOW_EXTENDED_STATUS: {
     description:
       "If non-zero, show the stash count, assume-unchanged file count, and skip-worktree file count",
     group: "Hometown Prompt content",
@@ -21,13 +21,13 @@ export const optionsData = {
   },
 
   // GROUP: Hometown Prompt layout
-  HOMETOWN_PROMPT_LINEBREAK_AFTER_GIT_REF: {
+  HOMETOWN_LINEBREAK_AFTER_GIT_REF: {
     description: "If non-zero, the Git ref info* is followed by a line break",
     group: "Hometown Prompt layout",
     value: { default: "1" },
     type: "integer",
   },
-  HOMETOWN_PROMPT_NO_LINEBREAK_BEFORE_GIT_REF: {
+  HOMETOWN_NO_LINEBREAK_BEFORE_GIT_REF: {
     description: "If zero, the Git ref info* is preceded by a line break",
     group: "Hometown Prompt layout",
     value: { default: "1" },
