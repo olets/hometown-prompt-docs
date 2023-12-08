@@ -63,13 +63,12 @@ export default defineUserConfig({
     ],
 
     // social metas
-    ["meta", { property: "og:title", content: "hometown-prompt" }],
+    ["meta", { property: "og:title", content: "Hometown Prompt" }],
     [
       "meta",
       {
         property: "og:description",
-        content:
-          "A configurable set of components for creating feature rich, high performance Git-aware zsh prompts.",
+        content: "A fast, dynamic, highly configurable Git-focused zsh theme",
       },
     ],
     [
@@ -79,11 +78,26 @@ export default defineUserConfig({
         content: "https://hometown-prompt.olets.dev/",
       },
     ],
-    ["meta", { property: "og:site_name", content: "hometown-prompt" }],
+    ["meta", { property: "og:site_name", content: "Hometown Prompt" }],
     ["meta", { property: "og:type", content: "website" }],
+    [
+      "meta",
+      {
+        property: "og:image",
+        content:
+          "https://hometown-prompt.olets.dev/images/hometown-prompt-splash-card.png",
+      },
+    ],
     ["meta", { property: "og:image:width", content: "1200" }],
     ["meta", { property: "og:image:height", content: "630" }],
-    ["meta", { name: "twitter:title", content: "hometown-prompt" }],
+    [
+      "meta",
+      {
+        property: "og:image:alt",
+        content: "The text 'Hometown Prompt' in pink cursive neon lettering",
+      },
+    ],
+    ["meta", { name: "twitter:title", content: "Hometown Prompt" }],
     ["meta", { name: "twitter:card", content: "summary_large_image" }],
     [
       "meta",
