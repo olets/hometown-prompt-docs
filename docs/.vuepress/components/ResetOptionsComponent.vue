@@ -20,6 +20,6 @@ export default {
     :disabled="!store.customizations"
     @click="reset"
   >
-    Reset All Options
+    Reset All Options To Their Defaults
   </button>
 </template>
