@@ -12,18 +12,18 @@ No custom configuration is required. Hometown Prompt works right out of the box.
 
 <!-- DUPE demo.md, options.md -->
 
+Custom content and the prompt character are printed with [prompt expansion](https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html), with `PROMPT_SUBST` and `PROMPT_PERCENT`. For example, the default prompt char `%%` is rendered as `%`, and the default custom content `%*` is rendered as the 24-hour HH:MM:SS time.
+
 <div style="
   background-color: var(--c-bg);
   box-shadow: 0 0 1rem 1rem var(--c-bg);
-  padding: 0.5rem 1rem;
-  position: sticky; 
+  position: sticky;   
   top: var(--navbar-height);
+  z-index: 10;
 ">
   <PromptComponent/>
 
-(In the terminal, the custom content and the prompt character are printed with [prompt expansion](https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html), with `PROMPT_SUBST` and `PROMPT_PERCENT`. For example, the default prompt char `%%` is rendered as `%`, and the default custom content `%*` is rendered as the 24-hour HH:MM:SS time).
-
-All custom configuration appears here, ready for copying and pasting into your `.zshrc`.
+Custom configuration ready for copying and pasting into your `.zshrc`:
 
 <ConfigComponent/>
 
