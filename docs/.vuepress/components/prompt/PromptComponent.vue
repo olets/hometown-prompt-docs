@@ -53,14 +53,17 @@ export default {
     )}; color: ${hexColor(getValue(store.context.data.terminalTextColor))};
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    border-radius: .25rem;`"
+    border-radius: .25rem;
+    white-space: nowrap;
+    overflow-x: auto;`"
   >
     <div
       :style="`${
         getValue(store.options.data.HOMETOWN_NO_LINEBREAK_BEFORE_GIT_REF)
           ? 'display: flex;'
           : ''
-      } gap: var(--prompt-gap)`"
+      } gap: var(--prompt-gap);
+      width: fit-content;`"
     >
       <div
         id="not-git"
@@ -93,7 +96,7 @@ export default {
 
     <div
       v-if="getValue(store.options.data.HOMETOWN_LINEBREAK_AFTER_GIT_REF)"
-      style="display: flex; gap: var(--prompt-gap)"
+      style="display: flex; gap: var(--prompt-gap); width: fit-content"
     >
       <StatusExtendedComponent
         v-if="getValue(store.options.data.HOMETOWN_SHOW_EXTENDED_STATUS)"
