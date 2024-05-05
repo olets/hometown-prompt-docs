@@ -181,6 +181,7 @@ export default defineUserConfig({
       "/transient-prompt.md",
       "/demo.md",
       "/advanced.md",
+      "/migrating-from-v3.md",
     ],
     sidebarDepth: 3,
     themePlugins: {
