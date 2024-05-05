@@ -17,7 +17,8 @@ Custom content and the prompt character are printed with [prompt expansion](http
 <div style="
   background-color: var(--c-bg);
   box-shadow: 0 0 1rem 1rem var(--c-bg);
-  position: sticky;   
+  padding: 0.5rem 0;
+  position: sticky;
   top: var(--navbar-height);
   z-index: 10;
 ">
