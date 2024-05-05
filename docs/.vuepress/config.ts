@@ -180,6 +180,7 @@ export default defineUserConfig({
       "/options.md",
       "/transient-prompt.md",
       "/demo.md",
+      "/advanced.md",
     ],
     sidebarDepth: 3,
     themePlugins: {
