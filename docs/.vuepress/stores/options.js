@@ -19,6 +19,14 @@ export const optionsData = {
     value: { default: "1" },
     type: "integer",
   },
+  HOMETOWN_SET_PSVAR: {
+    description:
+      "If non-zero, Hometown will set the <code>psvar</code> array to ( drawn_time char_color char first_line reserved )",
+    group: "Hometown Prompt content",
+    value: { default: "1" },
+    notes: "Sets psvar to ( drawn_time char_color char first_line reserved )",
+    type: "integer",
+  },
 
   // GROUP: Hometown Prompt layout
   HOMETOWN_LINEBREAK_AFTER_GIT_REF: {
@@ -30,6 +38,37 @@ export const optionsData = {
   HOMETOWN_NO_LINEBREAK_BEFORE_GIT_REF: {
     description: "If zero, the Git ref info* is preceded by a line break",
     group: "Hometown Prompt layout",
+    value: { default: "1" },
+    type: "integer",
+  },
+
+  // GROUP: Hometown Prompt transient prompt
+  HOMETOWN_TRANSIENT_PROMPT_CONTEXT: {
+    description:
+      "Configuration context applied to transient prompt. Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero.",
+    group: "Hometown Prompt transient prompt",
+    value: {
+      default:
+        "( \
+      [GIT_PROMPT_KIT_CWD_MAX_TRAILING_COUNT]-0 \
+      [GIT_PROMPT_KIT_HIDE_INACTIVE_AHEAD_BEHIND]-1 \
+      [GIT_PROMPT_KIT_HIDE_INACTIVE_EXTENDED_STATUS]-1 \
+      [GIT_PROMPT_KIT_HIDE_TOOL_NAMES]-1 \
+      [GIT_PROMPT_KIT_SHOW_INACTIVE_STATUS]-0 \
+      [GIT_PROMPT_KIT_SYMBOL_CHAR_NORMAL]-$'\n' \
+      [GIT_PROMPT_KIT_SYMBOL_CHAR_ROOT]-$'\n' \
+      [HOMETOWN_CUSTOM]-'%F{%2v}%3v%f %v-%*' \
+      [HOMETOWN_LINEBREAK_AFTER_GIT_REF]-0 \
+      [HOMETOWN_LINEBREAK_BEFORE_PROMPT]-0 \
+      [HOMETOWN_NO_LINEBREAK_BEFORE_GIT_REF]-1 \
+    )",
+    },
+    notes: "Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero.",
+    type: "associative array",
+  },
+  HOMETOWN_USE_TRANSIENT_PROMPT: {
+    description: "If non-zero, there will be a transient prompt",
+    group: "Hometown Prompt transient prompt",
     value: { default: "1" },
     type: "integer",
   },

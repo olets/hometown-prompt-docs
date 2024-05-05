@@ -178,6 +178,7 @@ export default defineUserConfig({
       },
       "/installation.md",
       "/options.md",
+      "/transient-prompt.md",
       "/demo.md",
     ],
     sidebarDepth: 3,

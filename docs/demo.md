@@ -66,47 +66,55 @@ Custom configuration ready for copying and pasting into your `.zshrc`:
 
 <div id="configuration"></div>
 
-## Hometown Prompt Configuration
+## Options
+
+### Hometown Prompt Configuration
 
 For detailed documentation of these options, see the [Options page](./options.md).
 
-### Content Options
+#### Content Options
 
 See [Options > Content](./options.md#content) for details.
 
 <OptionsConfigurationComponent group="hometown prompt content"/>
 
-### Layout Options
+#### Layout Options
 
 See [Options > Layout](./options.md#layout) for details.
 
 <OptionsConfigurationComponent group="hometown prompt layout"/>
 
+#### Transient Prompt Options
+
+See [Options > Layout](./options.md#transient-prompt) for details.
+
+<OptionsConfigurationComponent group="hometown prompt transient prompt"/>
+
 \* Git ref info is branch or commit, ahead/behind counts, remote name(s), and tag. See the [`GIT_PROMPT_KIT_REF` docs](https://git-prompt-kit.olets.dev/components.html).
 
-## Git Prompt Kit Configuration
+### Git Prompt Kit Configuration
 
 Hometown Prompt is made almost entirely of [Git Prompt Kit](https://git-prompt-kit.olets.dev) components. So almost all of configuration —color customization, symbol customization, dimming vs hiding inactive elements, the number of path segments shows, etc— is done by configuring through Git Prompt Kit. (Git Prompt Kit is bundled with Hometown Prompt, so no additional download is necessary.) For detailed documentations of these options, see the [Git Prompt Kit's options documentation](https://git-prompt-kit.olets.dev/options.html).
 
-### Behavior Options
+#### Behavior Options
 
 See [Git Prompt Kit's options' documentation](https://git-prompt-kit.olets.dev/options.html) for details.
 
 <OptionsConfigurationComponent group="behavior"/>
 
-### Color Options
+#### Color Options
 
 See [Git Prompt Kit's options' documentation](https://git-prompt-kit.olets.dev/options.html) for details.
 
 <OptionsConfigurationComponent group="color"/>
 
-### Content Options
+#### Content Options
 
 See [Git Prompt Kit's options' documentation](https://git-prompt-kit.olets.dev/options.html) for details.
 
 <OptionsConfigurationComponent group="content"/>
 
-### Symbol Options
+#### Symbol Options
 
 See [Git Prompt Kit's options' documentation](https://git-prompt-kit.olets.dev/options.html) for details.
 

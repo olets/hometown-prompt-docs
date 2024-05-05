@@ -16,4 +16,8 @@ Read about Git Prompt Kit's options in the [Git Prompt Kit's options documentati
 
 <OptionsComponent group="Hometown Prompt layout"/>
 
+## Transient prompt
+
+<OptionsComponent group="Hometown Prompt transient prompt"/>
+
 \* Git ref info is branch or commit, ahead/behind counts, remote name(s), and tag. See the [`GIT_PROMPT_KIT_REF` docs](https://git-prompt-kit.olets.dev/components.html).
