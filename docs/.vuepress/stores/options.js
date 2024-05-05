@@ -301,7 +301,7 @@ export const optionsData = {
     description: "Character shown at end of prompt for normal users",
     group: "Symbol",
     value: {
-      default: "%%",
+      default: "$'\\n%% '",
     },
     notes: "Rendered as a prompt string. The default renders as <code>%</code>",
     type: "string",
@@ -310,7 +310,7 @@ export const optionsData = {
     description: "Character shown at end of prompt for root users",
     group: "Symbol",
     value: {
-      default: "#",
+      default: "$'\\n# '",
     },
     type: "string",
   },
