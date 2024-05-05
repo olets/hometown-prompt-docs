@@ -35,6 +35,14 @@ export const optionsData = {
     value: { default: "1" },
     type: "integer",
   },
+  HOMETOWN_LINEBREAK_BEFORE_PROMPT: {
+    description:
+      "If non-zero, the prompt is preceded by a line break. See also <a href='/advanced.html'>Advanced</a>.",
+    group: "Hometown Prompt layout",
+    value: { default: "1" },
+    type: "integer",
+    notes: "See also <a href='/advanced.html'>Advanced</a>.",
+  },
   HOMETOWN_NO_LINEBREAK_BEFORE_GIT_REF: {
     description: "If zero, the Git ref info* is preceded by a line break",
     group: "Hometown Prompt layout",
