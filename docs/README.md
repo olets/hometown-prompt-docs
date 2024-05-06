@@ -67,7 +67,7 @@ If in a Git repo:
     - The number **commits behind the push remote** the local branch is. Optionally show the indicator even if the local branch is not behind the push remote.
     - The **push remote's remote**, if different from the user-configured default
     - (The push branch's name is not shown, even if it differs from the local name. Want it to be? Weigh in at [olets/hometown-prompt/#14](https://github.com/olets/hometown-prompt/issues/14))
-- The first **tag** pointing to the current commit, if any
+- The first **tag** pointing to the current commit, if there is one
 - The number of **untracked ("new") files**. Optionally show the accompanying symbol when there are no such files.
 - The number of **conflicted files**. Optionally show the accompanying symbol when there are no such files.
 - The number of **unstaged deleted files**. Optionally show the accompanying symbol when there are no such files.
