@@ -1,6 +1,8 @@
 # Transient prompt
 
-Hometown Prompt has a "transient prompt" feature. When transient prompt is enabled (as it is by default), the current command line gets a distinct prompt.
+## The effect
+
+data-rich prompt, possibly on several lines has a "transient prompt" feature. When transient prompt is enabled (as it is by default), the current command line gets a distinct prompt.
 
 Consider you run a series of commands:
 
@@ -10,34 +12,43 @@ echo bar
 echo baz
 ```
 
-_Without_ transient prompt, your terminal will show
+_Without_ transient prompt, your terminal will read
 
 ```shell
-[Hometown prompt] echo foo
+[possibly data-rich prompt, possibly on several lines]
+% echo foo
 foo
 
-[Hometown prompt] echo bar
+[possibly data-rich prompt, possibly on several lines]
+% echo bar
 bar
 
-[Hometown prompt] echo baz
+[possibly data-rich prompt, possibly on several lines]
+% echo baz
 baz
 ```
 
-_With_ transient prompt, your terminal will show
+_With_ transient prompt, your terminal can be something like
 
 ```shell
-[Hometown transient prompt] echo foo
+% [minimal prompt, on one line]
+echo foo
 foo
-
-[Hometown transient prompt] echo bar
+% [minimal prompt, on one line]
+echo bar
 bar
 
-[Hometown prompt] echo baz
+[possibly data-rich prompt, possibly on several lines]
+% echo baz
 baz
 ```
 
-The typical reason to use a transient prompt is to cut down on what information is shown for past prompts. That's how Hometown's works by default. The default Hometown transient prompt
+The typical reason to use a transient prompt is to show additional information in the current prompt than in past prompts. That's how Hometown's works by default. The default Hometown transient prompt
 
-- displays on one consolidated line with all inactive components hidden, and does not separate prompts with a blank line (this saves vertical space)
-- moves the prompt character from the command line to the prompt line (this makes it easy to copy and paste prior commands)
-- shows, instead of the time the prompt was drawn, the time the prompt was drawn _and_ the time command was run — looks like `16:48:41-16:49:29` (this can be helpful when revisiting history).
+- displays on one consolidated line with all inactive components hidden, and does not add a blank line before the prompt. This saves vertical space.
+- moves the prompt character from the start of the command line to the start of prompt. This makes it easy to copy and paste prior commands.
+- appends the time the command was run — looks like `16:48:41-16:49:29` (`timeDrawn-timeRun`). This can be helpful when revisiting history.
+
+## Performance
+
+Disabling transient prompt may reduce first prompt lag (time from the start of the shell to appearance of the prompt) by less than 10ms, first command lag (time from the start of the shell to the soonest the first interactive command can start executing) by approximately 20ms, and command lag (the time between pressing <kbd>Enter</kbd> on a blank line and the next prompt appearing) by less than 15ms, as measured by [zsh-bench](https://github.com/romkatv/zsh-bench/).
