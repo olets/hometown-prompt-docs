@@ -24,7 +24,7 @@ export const optionsData = {
       "If non-zero, Hometown will set the <code>psvar</code> array to ( drawn_time char_color char first_line reserved )",
     group: "Hometown Prompt content",
     value: { default: "1" },
-    notes: "Sets psvar to ( drawn_time char_color char first_line reserved )",
+    notes: "Sets psvar to ( drawn_time char_color char )",
     type: "integer",
   },
 
