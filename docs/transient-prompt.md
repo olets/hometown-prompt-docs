@@ -50,9 +50,9 @@ The typical reason to use a transient prompt is to show additional information i
 - appends the time the command was run — looks like `16:48:41-16:49:29` (`timeDrawn-timeRun`). This can be helpful when revisiting history.
 
 :::warning Heads up
-There's an edge case where prompts have different content depending on whether or not transient prompt is enabled.
+There's an edge case where prompts have different content depending on whether transient prompt is enabled.
 
-It comes up when changing the Git state outside of the shell.
+It comes up when changing the Git state from outside the terminal.
 
 Suppose you have a Git repo with one unstaged modified file. You open that directory in two terminals. Both terminals prompt's reflect the one unstaged modified file. Now in the first terminal you run `git add -A`. The first terminal now has a new prompt reflecting one staged modified file; the second terminal still has its prompt reflecting one _unstaged_ modified file. Now hit <kbd>Enter</kbd> in the second prompt.
 
