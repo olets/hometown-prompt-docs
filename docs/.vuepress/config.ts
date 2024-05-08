@@ -178,7 +178,12 @@ export default defineUserConfig({
       },
       {
         text: "Features",
-        children: ["/transient-prompt.md", "/scheduled-refresh.md"],
+        children: [
+          "/all-the-git-info.md",
+          "/customizability.md",
+          "/transient-prompt.md",
+          "/scheduled-refresh.md",
+        ],
       },
       "/installation.md",
       "/options.md",
