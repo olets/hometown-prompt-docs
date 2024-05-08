@@ -49,6 +49,20 @@ The typical reason to use a transient prompt is to show additional information i
 - moves the prompt character from the start of the command line to the start of prompt. This makes it easy to copy and paste prior commands.
 - appends the time the command was run — looks like `16:48:41-16:49:29` (`timeDrawn-timeRun`). This can be helpful when revisiting history.
 
+:::warning Heads up
+There's an edge case where prompts have different content depending on whether or not transient prompt is enabled.
+
+It comes up when changing the Git state outside of the shell.
+
+Suppose you have a Git repo with one unstaged modified file. You open that directory in two terminals. Both terminals prompt's reflect the one unstaged modified file. Now in the first terminal you run `git add -A`. The first terminal now has a new prompt reflecting one staged modified file; the second terminal still has its prompt reflecting one _unstaged_ modified file. Now hit <kbd>Enter</kbd> in the second prompt.
+
+The second terminal's current prompt now reflects the one staged modified file. But there's a difference: with transient prompt disabled (and in Hometown v3) the second terminal's _previous_ prompt still reflects one _unstaged_ modified file, but with transient prompt enabled has been updated to reflect one _staged_ modified file.
+
+If you don't like that behavior, disable transient prompt: set `HOMETOWN_USE_TRANSIENT_PROMPT=0`.
+
+If you like that behavior but don't want a distinct transient prompt, disable the distinct transient prompt: set `HOMETOWN_DISTINCT_TRANSIENT_PROMPT=0` (leaving `HOMETOWN_USE_TRANSIENT_PROMPT` at its default `1`).
+:::
+
 ## Customizing
 
 You can customize the transient prompt with the same options as the regular prompt. Declare them within `HOMETOWN_TRANSIENT_PROMPT_CONTEXT`. See [Options](./options.md).

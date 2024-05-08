@@ -59,27 +59,35 @@ export const optionsData = {
   },
 
   // GROUP: Hometown Prompt transient prompt
+  HOMETOWN_DISTINCT_TRANSIENT_PROMPT: {
+    description:
+      "If zero, <code>HOMETOWN_TRANSIENT_PROMPT_CONTEXT</code> will be ignored",
+    group: "Hometown Prompt transient prompt",
+    value: { default: "1" },
+    type: "integer",
+  },
   HOMETOWN_TRANSIENT_PROMPT_CONTEXT: {
     description:
-      "Configuration context applied to transient prompt. Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero.",
+      "Configuration context applied to transient prompt. Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero. Ignored if <code>HOMETOWN_DISTINCT_TRANSIENT_PROMPT</code> is zero.",
     group: "Hometown Prompt transient prompt",
     value: {
       default:
         "( \
-      [GIT_PROMPT_KIT_CWD_MAX_TRAILING_COUNT]-0 \
-      [GIT_PROMPT_KIT_HIDE_INACTIVE_AHEAD_BEHIND]-1 \
-      [GIT_PROMPT_KIT_HIDE_INACTIVE_EXTENDED_STATUS]-1 \
-      [GIT_PROMPT_KIT_HIDE_TOOL_NAMES]-1 \
-      [GIT_PROMPT_KIT_SHOW_INACTIVE_STATUS]-0 \
-      [GIT_PROMPT_KIT_SYMBOL_CHAR_NORMAL]-$'\n' \
-      [GIT_PROMPT_KIT_SYMBOL_CHAR_ROOT]-$'\n' \
-      [HOMETOWN_CUSTOM]-'%F{%2v}%3v%f %v-%*' \
-      [HOMETOWN_LINEBREAK_AFTER_GIT_REF]-0 \
-      [HOMETOWN_LINEBREAK_BEFORE_PROMPT]-0 \
-      [HOMETOWN_NO_LINEBREAK_BEFORE_GIT_REF]-1 \
-    )",
+        [GIT_PROMPT_KIT_CWD_MAX_TRAILING_COUNT]-0 \
+        [GIT_PROMPT_KIT_HIDE_INACTIVE_AHEAD_BEHIND]-1 \
+        [GIT_PROMPT_KIT_HIDE_INACTIVE_EXTENDED_STATUS]-1 \
+        [GIT_PROMPT_KIT_HIDE_TOOL_NAMES]-1 \
+        [GIT_PROMPT_KIT_SHOW_INACTIVE_STATUS]-0 \
+        [GIT_PROMPT_KIT_SYMBOL_CHAR_NORMAL]-$'\n' \
+        [GIT_PROMPT_KIT_SYMBOL_CHAR_ROOT]-$'\n' \
+        [HOMETOWN_CUSTOM]-'%F{%2v}%3v%f %v-%*' \
+        [HOMETOWN_LINEBREAK_AFTER_GIT_REF]-0 \
+        [HOMETOWN_LINEBREAK_BEFORE_PROMPT]-0 \
+        [HOMETOWN_NO_LINEBREAK_BEFORE_GIT_REF]-1 \
+      )",
     },
-    notes: "Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero.",
+    notes:
+      "Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero. Ignored if <code>HOMETOWN_DISTINCT_TRANSIENT_PROMPT</code> is zero.",
     type: "associative array",
   },
   HOMETOWN_USE_TRANSIENT_PROMPT: {
