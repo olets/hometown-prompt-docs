@@ -8,7 +8,7 @@ export const optionsData = {
       "Displayed at the start of the prompt, before the working directory. In the terminal, this is printed with <a href='https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html'>prompt expansion</a> with <code>PROMPT_SUBST</code> and <code>PROMPT_PERCENT</code>. Need it to be dynamic? Define it in a <code>precmd</code> hook.",
     group: "Hometown Prompt content",
     value: {
-      default: "'%*' is HOMETOWN_SET_PSVAR is 0. Otherwise, '%v'",
+      default: "'%*'",
     },
     notes:
       "In the terminal, this is printed with <a href='https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html'>prompt expansion</a> with <code>PROMPT_SUBST</code> and <code>PROMPT_PERCENT</code>",
