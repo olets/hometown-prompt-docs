@@ -145,6 +145,10 @@ textarea {
   color: var(--c-text-accent);
 }
 
+.custom-container.tip code {
+  color: var(--c-tip-text-dark);
+}
+
 .custom-container.warning .custom-container-title {
   color: var(--c-warning-text-dark);
 }
@@ -159,6 +163,10 @@ textarea {
 
 .custom-container.danger a {
   color: var(--c-text-accent);
+}
+
+.custom-container.danger code {
+  color: var(--c-danger-text-dark);
 }
 
 .custom-container.details a {
