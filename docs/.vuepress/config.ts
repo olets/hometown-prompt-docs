@@ -191,6 +191,7 @@ export default defineUserConfig({
         text: "Recipes",
         children: [
           "/recipes/linebreak-before-first-prompt-in-restarted-shell.md",
+          "/recipes/scheduled-refresh-with-static-time.md",
         ],
       },
       "/migrating-from-v3.md",
