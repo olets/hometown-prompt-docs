@@ -187,7 +187,12 @@ export default defineUserConfig({
       "/installation.md",
       "/options.md",
       "/demo.md",
-      "/advanced.md",
+      {
+        text: "Recipes",
+        children: [
+          "/recipes/linebreak-before-first-prompt-in-restarted-shell.md",
+        ],
+      },
       "/migrating-from-v3.md",
     ],
     sidebarDepth: 3,

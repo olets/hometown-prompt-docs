@@ -1,4 +1,4 @@
-# Advanced
+# Linebreak before first prompt in restarted shell
 
 If `HOMETOWN_LINEBREAK_BEFORE_PROMPT` (default: `1`) is non-zero, a blank line will be added before every prompt.
 
