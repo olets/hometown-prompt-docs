@@ -192,6 +192,7 @@ export default defineUserConfig({
         children: [
           "/recipes/linebreak-before-first-prompt-in-restarted-shell.md",
           "/recipes/scheduled-refresh-with-static-time.md",
+          "/recipes/timestamp-range-in-prompt.md",
         ],
       },
       "/migrating-from-v3.md",
