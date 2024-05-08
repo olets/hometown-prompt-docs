@@ -1,8 +1,8 @@
 # Transient prompt
 
-## The effect
+Hometown has a "transient prompt" feature. When transient prompt is enabled (as it is by default), the current command line gets a distinct prompt.
 
-data-rich prompt, possibly on several lines has a "transient prompt" feature. When transient prompt is enabled (as it is by default), the current command line gets a distinct prompt.
+## The effect
 
 Consider you run a series of commands:
 
