@@ -178,7 +178,7 @@ export default defineUserConfig({
       },
       {
         text: "Features",
-        children: ["/transient-prompt.md"],
+        children: ["/transient-prompt.md", "/scheduled-refresh.md"],
       },
       "/installation.md",
       "/options.md",
