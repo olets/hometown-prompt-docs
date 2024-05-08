@@ -145,8 +145,16 @@ textarea {
   color: var(--c-text-accent);
 }
 
+.custom-container.warning .custom-container-title {
+  color: var(--c-warning-text-dark);
+}
+
 .custom-container.warning a {
   color: var(--c-text-accent);
+}
+
+.custom-container.warning code {
+  color: var(--c-warning-text-dark);
 }
 
 .custom-container.danger a {
