@@ -180,7 +180,6 @@ export default defineUserConfig({
         text: "Features",
         children: [
           "/all-the-git-info.md",
-          "/customizability.md",
           "/transient-prompt.md",
           "/scheduled-refresh.md",
         ],
