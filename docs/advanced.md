@@ -2,7 +2,7 @@
 
 If `HOMETOWN_LINEBREAK_BEFORE_PROMPT` (default: `1`) is non-zero, a blank line will be added before every prompt.
 
-```shell
+```shell:no-line-numbers
 
 [first prompt] …
 
@@ -13,7 +13,7 @@ If `HOMETOWN_LINEBREAK_BEFORE_PROMPT` (default: `1`) is non-zero, a blank line w
 
 If `HOMETOWN_SET_PSVAR` (default: `1`) _and_ `HOMETOWN_NO_LINEBREAK_BEFORE_FIRST_PROMPT` (default: `1`) are also non-zero, the first prompt of each session will _not_ have a blank line before it.
 
-```shell
+```shell:no-line-numbers
 [first prompt]
 
 [second prompt]
@@ -25,7 +25,7 @@ That's nice when opening a new terminal: it won't start with extraneous blank li
 
 The downside is that if you start a fresh session in an open terminal, for example by running `exec zsh`, the new session's first prompt won't have a blank link above it.
 
-```shell
+```shell:no-line-numbers
 [first prompt]
 
 [second prompt] exec zsh

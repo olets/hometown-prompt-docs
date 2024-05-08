@@ -15,24 +15,24 @@ Check the [Issues](https://github.com/olets/hometown-prompt-docs/issues) to see 
 
 ### Setup
 
-```shell
+```shell:no-line-numbers
 pnpm install --shamefully-hoist
 ```
 
 ### Serve and watch
 
-```shell
+```shell:no-line-numbers
 pnpm docs:dev
 ```
 
 ### Update Algolia index
 
-```shell
+```shell:no-line-numbers
 cp .env{.example,}
 ```
 
 and fill in values in `.env`. Then
 
-```shell
+```shell:no-line-numbers
 pnpm algolia:index
 ```

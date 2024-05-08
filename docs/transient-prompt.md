@@ -6,7 +6,7 @@ data-rich prompt, possibly on several lines has a "transient prompt" feature. Wh
 
 Consider you run a series of commands:
 
-```
+```shell:no-line-numbers
 echo foo
 echo bar
 echo baz
@@ -14,7 +14,7 @@ echo baz
 
 _Without_ transient prompt, your terminal will read
 
-```shell
+```shell:no-line-numbers
 [possibly data-rich prompt, possibly on several lines]
 % echo foo
 foo
@@ -30,7 +30,7 @@ baz
 
 _With_ transient prompt, your terminal can be something like
 
-```shell
+```shell:no-line-numbers
 % [minimal prompt, on one line]
 echo foo
 foo
