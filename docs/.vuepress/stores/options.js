@@ -7,7 +7,9 @@ export const optionsData = {
     description:
       "Displayed at the start of the prompt, before the working directory. In the terminal, this is printed with <a href='https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html'>prompt expansion</a> with <code>PROMPT_SUBST</code> and <code>PROMPT_PERCENT</code>. Need it to be dynamic? Define it in a <code>precmd</code> hook.",
     group: "Hometown Prompt content",
-    value: { default: "%*" },
+    value: {
+      default: "'%*' is HOMETOWN_SET_PSVAR is 0. Otherwise, '%v'",
+    },
     notes:
       "In the terminal, this is printed with <a href='https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html'>prompt expansion</a> with <code>PROMPT_SUBST</code> and <code>PROMPT_PERCENT</code>",
     type: "string",
@@ -21,10 +23,11 @@ export const optionsData = {
   },
   HOMETOWN_SET_PSVAR: {
     description:
-      "If non-zero, Hometown will set the <code>psvar</code> array to ( drawn_time char_color char first_line reserved )",
+      "If non-zero, Hometown will set the <code>psvar</code> array to ( drawn_time char_color char drawn_date whether_drawn_date_differs_from_today )",
     group: "Hometown Prompt content",
     value: { default: "1" },
-    notes: "Sets psvar to ( drawn_time char_color char )",
+    notes:
+      "Sets psvar to ( drawn_time char_color char drawn_date whether_drawn_date_differs_from_today )",
     type: "integer",
   },
 
