@@ -176,9 +176,12 @@ export default defineUserConfig({
         text: "Introduction",
         link: "/",
       },
+      {
+        text: "Features",
+        children: ["/transient-prompt.md"],
+      },
       "/installation.md",
       "/options.md",
-      "/transient-prompt.md",
       "/demo.md",
       "/advanced.md",
       "/migrating-from-v3.md",
