@@ -8,6 +8,7 @@
 
 :root {
   --c-bg-arrow: currentColor;
+  --c-text-quote: #666;
   --content-width: calc(900rem / 16);
   --font-family-code: "Inconsolata Awesome", monospace;
   --prompt-gap: calc(5rem / 16);
@@ -24,6 +25,11 @@ html.dark {
   --c-brand: #0674d5;
   --c-brand-light: #105a9b;
   --c-tip-text-accent: #0d497d;
+}
+
+html.dark {
+  --c-text-quote: #aaa;
+  --c-text-accent: #6ebafc;
 }
 
 .customized:not(:invalid) {
