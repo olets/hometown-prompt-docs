@@ -80,7 +80,7 @@ export const optionsData = {
         [GIT_PROMPT_KIT_SHOW_INACTIVE_STATUS]-0 \
         [GIT_PROMPT_KIT_SYMBOL_CHAR_NORMAL]-$'\n' \
         [GIT_PROMPT_KIT_SYMBOL_CHAR_ROOT]-$'\n' \
-        [HOMETOWN_CUSTOM]-'%F{%2v}%3v%f %v-%*' \
+        [HOMETOWN_CUSTOM]-'%F{%2v}%3v%f %(5V.%5v %v - %W %*.%v-%*)' \
         [HOMETOWN_LINEBREAK_AFTER_GIT_REF]-0 \
         [HOMETOWN_LINEBREAK_BEFORE_PROMPT]-0 \
         [HOMETOWN_NO_LINEBREAK_BEFORE_GIT_REF]-1 \
