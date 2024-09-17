@@ -1,6 +1,7 @@
 <script>
 import { useOptionsStore } from "../stores/options";
 import { useContextStore } from "../stores/context";
+import { expandPromptSequence } from "../utils/expandPromptSequence";
 import { getValue } from "../utils/value";
 import PromptSegmentComponent from "./prompt/PromptSegmentComponent.vue";
 
@@ -14,6 +15,7 @@ export default {
     return { store };
   },
   methods: {
+    expandPromptSequence,
     getValue,
   },
 };
@@ -28,8 +30,12 @@ export default {
     "
     :text="
       getValue(store.context.data.userRoot)
-        ? getValue(store.options.data.GIT_PROMPT_KIT_SYMBOL_CHAR_ROOT)
-        : getValue(store.options.data.GIT_PROMPT_KIT_SYMBOL_CHAR_NORMAL)
+        ? expandPromptSequence(
+          getValue(store.options.data.GIT_PROMPT_KIT_SYMBOL_CHAR_ROOT)
+        )
+        : expandPromptSequence(
+          getValue(store.options.data.GIT_PROMPT_KIT_SYMBOL_CHAR_NORMAL)
+        )
     "
   />
 </template>

@@ -2,6 +2,7 @@
 import { useOptionsStore } from "../../stores/options";
 import { useContextStore } from "../../stores/context";
 import { hexColor } from "../../utils/ansiToHex.js";
+import { getChar } from "../../utils/char";
 import { getValue } from "../../utils/value";
 import PromptSegmentComponent from "./PromptSegmentComponent.vue";
 import ActionComponent from "../ActionComponent.vue";
@@ -34,6 +35,7 @@ export default {
     return { store };
   },
   methods: {
+    getChar,
     hexColor,
     useVerboseDefaults() {
       return getValue(
@@ -95,19 +97,28 @@ export default {
     </div>
 
     <div
-      v-if="getValue(store.options.data.HOMETOWN_LINEBREAK_AFTER_GIT_REF)"
-      style="display: flex; gap: var(--prompt-gap); width: fit-content"
+      :style="`display: flex; width: fit-content;
+        ${
+        getChar(store).includes('\\n')
+          ? 'flex-direction: column;'
+          : 'gap: var(--prompt-gap);'
+      }`"
     >
-      <StatusExtendedComponent
-        v-if="getValue(store.options.data.HOMETOWN_SHOW_EXTENDED_STATUS)"
-      />
+      <div
+        v-if="getValue(store.options.data.HOMETOWN_LINEBREAK_AFTER_GIT_REF)"
+        style="display: flex; gap: var(--prompt-gap); width: fit-content"
+      >
+        <StatusExtendedComponent
+          v-if="getValue(store.options.data.HOMETOWN_SHOW_EXTENDED_STATUS)"
+        />
 
-      <StatusComponent />
+        <StatusComponent />
 
-      <ActionComponent />
+        <ActionComponent />
+      </div>
+
+      <!-- prompt character -->
+      <CharComponent />
     </div>
-
-    <!-- prompt character -->
-    <CharComponent />
   </div>
 </template>
