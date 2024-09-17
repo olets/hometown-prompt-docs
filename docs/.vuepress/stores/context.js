@@ -173,16 +173,16 @@ export const contextData = {
     value: { default: false },
     type: "boolean",
   },
-  userHiddenUser: {
+  user: {
     group: "User",
-    label: "The current user is hidden",
-    value: { default: false },
+    label: "The current user",
+    value: { default: "olets" },
     type: "boolean",
   },
-  userHiddenHost: {
+  host: {
     group: "User",
-    label: "The current host is hidden",
-    value: { default: false },
+    label: "The current host",
+    value: { default: "dev" },
     type: "boolean",
   },
   userRoot: {

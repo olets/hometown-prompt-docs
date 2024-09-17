@@ -19,30 +19,45 @@ export default {
         this.store.options.data.GIT_PROMPT_KIT_VERBOSE_DEFAULT_SYMBOLS
       );
     },
+    hostIsHidden() {
+      const hiddenHosts = getValue(
+        this.store.options.data.GIT_PROMPT_KIT_HIDDEN_HOSTS
+      )
+        .replace(/\((.+)\)/, "$1")
+        .replaceAll(/\s+/g, " ")
+        .split(" ");
+
+      return hiddenHosts.includes(getValue(this.store.context.data.host));
+    },
+    userIsHidden() {
+      const hiddenUsers = getValue(
+        this.store.options.data.GIT_PROMPT_KIT_HIDDEN_USERS
+      )
+        .replace(/\((.+)\)/, "$1")
+        .replaceAll(/\s+/g, " ")
+        .split(" ");
+
+      return hiddenUsers.includes(getValue(this.store.context.data.user));
+    },
     getValue,
   },
 };
 </script>
 
 <template>
-  <div
-    v-if="
-      !getValue(store.context.data.userHiddenUser) ||
-        !getValue(store.context.data.userHiddenHost)
-    "
-  >
+  <div v-if="!userIsHidden() || !hostIsHidden()">
     <PromptSegmentComponent
-      v-if="!getValue(store.context.data.userHiddenUser)"
+      v-if="!userIsHidden()"
       :key="useVerboseDefaults()"
       color-option="GIT_PROMPT_KIT_COLOR_USER"
-      text="olets"
+      :text="getValue(store.context.data.user)"
     />
 
     <PromptSegmentComponent
-      v-if="!getValue(store.context.data.userHiddenHost)"
+      v-if="!hostIsHidden()"
       :key="useVerboseDefaults()"
       color-option="GIT_PROMPT_KIT_COLOR_HOST"
-      text="@dev"
+      :text="`@${getValue(store.context.data.host)}`"
     />
   </div>
 </template>
