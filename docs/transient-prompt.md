@@ -31,24 +31,6 @@ There's an edge case where prompts have different content depending on whether t
 
 It comes up when changing the Git state from outside the terminal.
 
-Suppose you have a Git repo with one unstaged modified file. You open that directory in two terminals. Both terminals prompt's reflect the one unstaged modified file. Now in the first terminal you run `git add -A`. The first terminal now has a new prompt reflecting one staged modified file; the second terminal still has its prompt reflecting one _unstaged_ modified file. Now hit <kbd>Enter</kbd> in the second prompt.
+Suppose you have a Git repo with one unstaged modified file. You open that directory in two terminals. In both terminals the prompt reflect the one unstaged modified file. Now in the first terminal you run `git add -A`. The first terminal now has a new prompt reflecting one staged modified file; the second terminal still has its prompt reflecting one _unstaged_ modified file. Now hit <kbd>Enter</kbd> in the second prompt.
 
-The second terminal's current prompt now reflects the one staged modified file. But there's a difference: with transient prompt disabled (and in Hometown v3) the second terminal's _previous_ prompt still reflects one _unstaged_ modified file, but with transient prompt enabled has been updated to reflect one _staged_ modified file.
-
-If you _don't_ like that behavior, disable transient prompt: set `HOMETOWN_USE_TRANSIENT_PROMPT=0` before loading Hometown.
-
-```shell:no-line-numbers
-# .zshrc
-
-HOMETOWN_USE_TRANSIENT_PROMPT=0
-# and load Hometown here
-```
-
-If you _do_ like that behavior, but don't want a distinct transient prompt, disable the distinct transient prompt: set `HOMETOWN_DISTINCT_TRANSIENT_PROMPT=0` before loading Hometown (leaving `HOMETOWN_USE_TRANSIENT_PROMPT` at its default `1`).
-
-```shell:no-line-numbers
-# .zshrc
-
-HOMETOWN_DISTINCT_TRANSIENT_PROMPT=0
-# and load Hometown here
-```
+The second terminal's current prompt now reflects the one staged modified file. But there's a difference: with transient prompt disabled (and in Hometown v3) the second terminal's _previous_ prompt still reflects one _unstaged_ modified file, but with transient prompt enabled it has been updated to reflect one _staged_ modified file.

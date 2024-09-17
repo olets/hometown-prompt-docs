@@ -62,16 +62,9 @@ export const optionsData = {
   },
 
   // GROUP: Hometown Prompt transient prompt
-  HOMETOWN_DISTINCT_TRANSIENT_PROMPT: {
-    description:
-      "If zero, <code>HOMETOWN_TRANSIENT_PROMPT_ENV</code> will be ignored",
-    group: "Hometown Prompt transient prompt",
-    value: { default: "1" },
-    type: "integer",
-  },
   HOMETOWN_TRANSIENT_PROMPT_ENV: {
     description:
-      "Configuration context applied to transient prompt. Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero. Ignored if <code>HOMETOWN_DISTINCT_TRANSIENT_PROMPT</code> is zero.",
+      "Configuration context applied to transient prompt. Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero.",
     group: "Hometown Prompt transient prompt",
     value: {
       default:
@@ -89,8 +82,7 @@ export const optionsData = {
         [HOMETOWN_NO_LINEBREAK_BEFORE_GIT_REF]-1 \
       )",
     },
-    notes:
-      "Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero. Ignored if <code>HOMETOWN_DISTINCT_TRANSIENT_PROMPT</code> is zero.",
+    notes: "Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero.",
     type: "associative array",
   },
   HOMETOWN_USE_TRANSIENT_PROMPT: {
