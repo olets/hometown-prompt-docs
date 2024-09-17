@@ -13,6 +13,7 @@ export const optionsData = {
     notes:
       "In the terminal, this is printed with <a href='https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html'>prompt expansion</a> with <code>PROMPT_SUBST</code> and <code>PROMPT_PERCENT</code>",
     type: "string",
+    addedIn: "3.0.0",
   },
   HOMETOWN_SHOW_EXTENDED_STATUS: {
     description:
@@ -20,6 +21,7 @@ export const optionsData = {
     group: "Hometown Prompt content",
     value: { default: "1" },
     type: "integer",
+    addedIn: "3.0.0",
   },
   HOMETOWN_SET_PSVAR: {
     description:
@@ -29,6 +31,7 @@ export const optionsData = {
     notes:
       "Sets psvar to ( drawn_time char_color char drawn_date whether_drawn_date_differs_from_today )",
     type: "integer",
+    addedIn: "4.0.0",
   },
 
   // GROUP: Hometown Prompt layout
@@ -37,6 +40,7 @@ export const optionsData = {
     group: "Hometown Prompt layout",
     value: { default: "1" },
     type: "integer",
+    addedIn: "3.0.0",
   },
   HOMETOWN_LINEBREAK_BEFORE_PROMPT: {
     description:
@@ -45,6 +49,7 @@ export const optionsData = {
     value: { default: "1" },
     type: "integer",
     notes: "See also <a href='/advanced.html'>Advanced</a>.",
+    addedIn: "4.0.0",
   },
   HOMETOWN_NO_LINEBREAK_BEFORE_FIRST_PROMPT: {
     description:
@@ -53,12 +58,14 @@ export const optionsData = {
     value: { default: "1" },
     type: "integer",
     notes: "See also <a href='/advanced.html'>Advanced</a>.",
+    addedIn: "4.0.0",
   },
   HOMETOWN_NO_LINEBREAK_BEFORE_GIT_REF: {
     description: "If zero, the Git ref info* is preceded by a line break",
     group: "Hometown Prompt layout",
     value: { default: "1" },
     type: "integer",
+    addedIn: "3.0.0",
   },
 
   // GROUP: Hometown Prompt transient prompt
@@ -84,12 +91,14 @@ export const optionsData = {
     },
     notes: "Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero.",
     type: "associative array",
+    addedIn: "4.0.0",
   },
   HOMETOWN_USE_TRANSIENT_PROMPT: {
     description: "If non-zero, there will be a transient prompt",
     group: "Hometown Prompt transient prompt",
     value: { default: "1" },
     type: "integer",
+    addedIn: "4.0.0",
   },
 
   // GROUP: COLOR

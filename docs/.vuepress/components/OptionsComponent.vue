@@ -25,6 +25,10 @@ export default {
     },
   },
   methods: {
+    hasAddedIn() {
+      return Object.values(this.options).filter((option) => option?.addedIn)
+        .length;
+    },
     hasColorOptions() {
       return Object.values(this.options).filter(
         (option) => option?.type === "color"
@@ -51,11 +55,20 @@ export default {
       <thead>
         <tr>
           <th>Option</th>
+          <th v-if="hasAddedIn()">
+            Added In
+          </th>
           <th>Default</th>
-          <th v-if="hasVerboseDefaults()">Verbose Default</th>
+          <th v-if="hasVerboseDefaults()">
+            Verbose Default
+          </th>
           <th>Type</th>
-          <th v-if="hasColorOptions()">Swatch</th>
-          <th v-if="hasDescriptions()">Description</th>
+          <th v-if="hasColorOptions()">
+            Swatch
+          </th>
+          <th v-if="hasDescriptions()">
+            Description
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -69,9 +82,16 @@ export default {
           "
         >
           <td>
-            <label :for="`field-${optionKey}`" style="display: block">
+            <label
+              :for="`field-${optionKey}`"
+              style="display: block"
+            >
               <code>{{ optionKey }}</code>
             </label>
+          </td>
+
+          <td v-if="hasAddedIn()">
+            <span v-if="option?.addedIn">{{ option.addedIn }}</span>
           </td>
 
           <td>
@@ -94,10 +114,13 @@ export default {
               disabled
               type="color"
               :value="hexColor(getValue(option))"
-            />
+            >
           </td>
 
-          <td v-if="hasDescriptions()" v-html="option?.description" />
+          <td
+            v-if="hasDescriptions()"
+            v-html="option?.description"
+          />
         </tr>
       </tbody>
     </table>
