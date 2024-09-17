@@ -17,7 +17,7 @@ You can configure your prompt to show the same timestamp range as the default tr
 
 ## Customizing
 
-You can customize the transient prompt with the same options as the regular prompt. Declare them within `HOMETOWN_TRANSIENT_PROMPT_CONTEXT`. See [Options](./options.md).
+You can customize the transient prompt with the same options as the regular prompt. Declare them within `HOMETOWN_TRANSIENT_PROMPT_ENV`. See [Options](./options.md).
 
 Hometown can (and by default does) set `psvar`, providing some values which may be useful in transient prompt customization. See [Options](./options.md) and zsh's official [prompt expansion conditional substrings documentation](https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Conditional-Substrings-in-Prompts).
 

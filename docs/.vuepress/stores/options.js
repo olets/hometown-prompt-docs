@@ -64,12 +64,12 @@ export const optionsData = {
   // GROUP: Hometown Prompt transient prompt
   HOMETOWN_DISTINCT_TRANSIENT_PROMPT: {
     description:
-      "If zero, <code>HOMETOWN_TRANSIENT_PROMPT_CONTEXT</code> will be ignored",
+      "If zero, <code>HOMETOWN_TRANSIENT_PROMPT_ENV</code> will be ignored",
     group: "Hometown Prompt transient prompt",
     value: { default: "1" },
     type: "integer",
   },
-  HOMETOWN_TRANSIENT_PROMPT_CONTEXT: {
+  HOMETOWN_TRANSIENT_PROMPT_ENV: {
     description:
       "Configuration context applied to transient prompt. Default value assumes <code>HOMETOWN_SET_PSVAR</code> is non-zero. Ignored if <code>HOMETOWN_DISTINCT_TRANSIENT_PROMPT</code> is zero.",
     group: "Hometown Prompt transient prompt",
