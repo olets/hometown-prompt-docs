@@ -52,16 +52,10 @@ export default {
         <tr>
           <th>Option</th>
           <th>Default</th>
-          <th v-if="hasVerboseDefaults()">
-            Verbose Default
-          </th>
+          <th v-if="hasVerboseDefaults()">Verbose Default</th>
           <th>Type</th>
-          <th v-if="hasColorOptions()">
-            Swatch
-          </th>
-          <th v-if="hasDescriptions()">
-            Description
-          </th>
+          <th v-if="hasColorOptions()">Swatch</th>
+          <th v-if="hasDescriptions()">Description</th>
         </tr>
       </thead>
       <tbody>
@@ -75,10 +69,7 @@ export default {
           "
         >
           <td>
-            <label
-              :for="`field-${optionKey}`"
-              style="display: block"
-            >
+            <label :for="`field-${optionKey}`" style="display: block">
               <code>{{ optionKey }}</code>
             </label>
           </td>
@@ -103,13 +94,10 @@ export default {
               disabled
               type="color"
               :value="hexColor(getValue(option))"
-            >
+            />
           </td>
 
-          <td
-            v-if="hasDescriptions()"
-            v-html="option?.description"
-          />
+          <td v-if="hasDescriptions()" v-html="option?.description" />
         </tr>
       </tbody>
     </table>
