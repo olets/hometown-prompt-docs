@@ -41,7 +41,7 @@ Alias `exec` such that `exec zsh` adds a blank line:
 ```shell
 # .zshrc
 
-exec_with_conditional_linebreak() {
+newline_before_exec_zsh {
   if [[ $* == 'zsh' ]]; then
     printf '\n'
   fi
@@ -49,5 +49,5 @@ exec_with_conditional_linebreak() {
   'builtin' 'exec' $*
 }
 
-alias echo=exec_with_conditional_linebreak
+alias echo=newline_before_exec_zsh
 ```
