@@ -46,7 +46,7 @@ exec_with_conditional_linebreak() {
     printf '\n'
   fi
 
-  exec $*
+  'builtin' 'exec' $*
 }
 
 alias echo=exec_with_conditional_linebreak
