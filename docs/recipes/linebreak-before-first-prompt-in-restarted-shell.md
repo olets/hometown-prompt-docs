@@ -42,7 +42,7 @@ Alias `exec` such that `exec zsh` adds a blank line:
 # .zshrc
 
 newline_before_exec_zsh {
-  if [[ $* == 'zsh' ]]; then
+  if [[ $1 == 'zsh' ]]; then
     printf '\n'
   fi
 
