@@ -22,13 +22,18 @@ exec zsh
 
 ## Manual
 
-Either clone this repo and add `source path/to/hometown.zsh-theme` to your `.zshrc`, or
+- Either download the archive of the release of your choice from <https://github.com/olets/hometown-prompt/releases> and expand it (ensures you have the latest official release)
 
-1. Download [the latest Hometown Prompt binary](https://github.com/olets/hometown-prompt/releases/latest)
-1. Put the file `hometown.zsh-theme` in a directory in your `PATH`
+- or clone a single branch:
 
-Then restart zsh:
+  ```shell
+  git clone https://github.com/olets/hometown-prompt --recurse-submodules --single-branch --branch <branch> --depth 1
+  ```
 
-```shell:no-line-numbers
+  Replace `<branch>` with a branch name. Good options are `main` (for the latest stable release), `next` (for the latest release, even if it isn't stable), or `v3` (for releases in this major version).
+
+Then add `source path/to/hometown.zsh-theme` to your `.zshrc` (replace `path/to/` with the real path), and restart zsh:
+
+```shell
 exec zsh
 ```
