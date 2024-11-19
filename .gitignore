@@ -1,7 +1,6 @@
 node_modules
-.temp
-.cache
 .eslintcache
-dist
+docs/.vitepress/cache
+docs/.vitepress/dist
 .env
 
