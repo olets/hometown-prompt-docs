@@ -6,15 +6,15 @@
 
 By default it looks something like this
 
-![Hometown Prompt screenshot, default configuration](/images/hometown-prompt-default.png)
+<!-- ![Hometown Prompt screenshot, default configuration](/images/hometown-prompt-default.png) -->
 
 It has numerous layout and content toggles. With very little configuration it can look, for example, like this:
 
-![Hometown Prompt screenshot, default configuration](/images/hometown-prompt-short.png)
+<!-- ![Hometown Prompt screenshot, default configuration](/images/hometown-prompt-short.png) -->
 
 Or like this:
 
-![Hometown Prompt screenshot, default configuration](/images/hometown-prompt-long.png)
+<!-- ![Hometown Prompt screenshot, default configuration](/images/hometown-prompt-long.png) -->
 
 Colors, text, symbols, and the slot which in these screenshots is the time, are all fully customizable. Here's just one of the infinite possibilities:
 

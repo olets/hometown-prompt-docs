@@ -3,44 +3,28 @@
   "version": "1.0.0",
   "description": "Documentation for Hometown Prompt",
   "main": "index.js",
+  "packageManager": "bun@1.1.25",
   "scripts": {
     "algolia:index": "docker run --platform=linux/amd64 -it --env-file=./.env -e \"CONFIG=$(node docsearch.config.js)\" algolia/docsearch-scraper",
     "docs:crawl": "docker run --platform=linux/amd64 -it --env-file=./.env -e \"CONFIG=$(node docsearch.config.js)\" algolia/docsearch-scraper",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "prepare": "husky install"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "Henry Bley-Vroman <olets@olets.dev>",
   "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
-    "@algolia/client-search": "^4.19.1",
-    "@commitlint/cli": "^17.7.0",
-    "@commitlint/config-conventional": "^17.7.0",
-    "@types/node": "*",
-    "@vuepress/client": "2.0.0-beta.67",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.67",
-    "dotenv": "^16.3.1",
-    "eslint": "^8.46.0",
-    "eslint-plugin-vue": "^9.17.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
-    "prettier": "^2.8.1",
-    "react": "16.8.0",
-    "react-dom": "16.8.0",
+    "@types/bun": "latest",
     "typescript": ">=4.4.4",
-    "vue": "^3.3.4",
-    "vuepress": "2.0.0-beta.67"
-  },
-  "lint-staged": {
-    "**/*.{js,vue}": "eslint --cache --fix --no-ignore",
-    "**/*": "prettier --write --ignore-unknown"
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.13"
   },
   "dependencies": {
-    "pinia": "^2.1.6"
+    "pinia": "^2.2.6"
   },
   "peerDependencies": {
-    "@types/node": "*",
     "typescript": ">=4.4.4"
-  }
+  },
+  "type": "module"
 }
