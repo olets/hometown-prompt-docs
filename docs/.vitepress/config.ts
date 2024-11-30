@@ -201,7 +201,10 @@ export default defineConfig({
           },
         ],
       },
-      { link: "/migrating-from-v3.md", text: "Migrating from v3" },
+      {
+        link: "/migrating-between-versions.md",
+        text: "Migrating between versions",
+      },
     ],
     socialLinks: [],
   },

@@ -1,4 +1,6 @@
-# Migrating from v3
+# Migrating between versions
+
+## Migrating from v3
 
 - [Transient prompt](./transient-prompt.md), new in v4, is enabled by default. To disable it, keeping the v3 behavior, set `HOMETOWN_USE_TRANSIENT_PROMPT=0` before loading Hometown.
   ```shell
