@@ -125,6 +125,7 @@ export default defineConfig({
     ],
   ],
   markdown: {
+    typographer: true,
     externalLinks: {
       class: "vp-external-link-icon",
       target: "_self",
