@@ -174,6 +174,10 @@ export default defineConfig({
         link: "/",
       },
       {
+        text: "What’s new?",
+        link: "/whats-new.md",
+      },
+      {
         text: "Features",
         items: [
           { link: "/all-the-git-info.md", text: "All the Git info" },
