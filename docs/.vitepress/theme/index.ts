@@ -47,12 +47,14 @@ import StatusComponent from "../components/StatusComponent.vue";
 import StatusExtendedComponent from "../components/StatusExtendedComponent.vue";
 import UntrackedComponent from "../components/UntrackedComponent.vue";
 import UserhostComponent from "../components/UserhostComponent.vue";
+import VersionNotice from "../components/VersionNotice.vue";
 
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
+      "doc-before": () => h(VersionNotice),
       "layout-bottom": () => {
         scrollableRegionsHaveKeyboardAccess();
         trackLinksAndFathomEvents();
