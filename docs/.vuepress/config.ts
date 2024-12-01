@@ -142,6 +142,31 @@ export default defineUserConfig({
     docsRepo: "olets/hometown-prompt-docs",
     navbar: [
       {
+        text: "v2",
+        children: [
+          {
+            text: "v4",
+            link: "https://v4.hometown-prompt.olets.dev",
+            target: "_self",
+          },
+          {
+            text: "v3",
+            link: "https://v3.hometown-prompt.olets.dev",
+            target: "_self",
+          },
+          {
+            text: "v2",
+            link: "",
+            target: "_self",
+          },
+          {
+            text: "v1",
+            link: "https://v1.hometown-prompt.olets.dev",
+            target: "_self",
+          },
+        ],
+      },
+      {
         text: "Changelog",
         link: "https://github.com/olets/hometown-prompt/blob/main/CHANGELOG.md",
         target: "_self",
