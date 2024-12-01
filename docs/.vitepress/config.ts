@@ -145,19 +145,37 @@ export default defineConfig({
     lastUpdated: undefined,
     nav: [
       {
-        text: "Changelog",
-        link: "https://github.com/olets/hometown-prompt/blob/main/CHANGELOG.md",
-        target: "_self",
+        text: "v4",
+        items: [
+          {
+            text: "Major version",
+            link: "",
+          },
+          {
+            text: "v4",
+            link: "/",
+            target: "_self",
+          },
+          {
+            text: "v3",
+            link: "https://v3.hometown-prompt.olets.dev",
+            target: "_self",
+          },
+          {
+            text: "v2",
+            link: "https://v2.hometown-prompt.olets.dev",
+            target: "_self",
+          },
+          {
+            text: "v1",
+            link: "https://v1.hometown-prompt.olets.dev",
+            target: "_self",
+          },
+        ],
       },
       {
-        text: "License",
-        link: "https://github.com/olets/hometown-prompt/blob/main/LICENSE",
-        target: "_self",
-      },
-      // Manual instead of with defaultTheme's `repo` so that we can specify the `target`
-      {
-        text: "GitHub",
-        link: "https://github.com/olets/hometown-prompt",
+        text: "Source, Changelog, License",
+        link: "https://github.com/olets/hometown-prompt/",
         target: "_self",
       },
       {
