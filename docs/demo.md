@@ -1,5 +1,9 @@
 # Interactive Demo & Configurator
 
+:::danger Heads Up
+v4 is coming. If you do advanced configuration, read [the v3.x -> v4.x migration guide](https://v4.hometown-prompt.olets.dev/migrating-between-versions) and/or read about [pinning v3.x](./installation.md).
+:::
+
 On this page you can see how Hometown Prompt responds to [context](#context) (user, host, Git status, etc).
 
 You can also experiment with [customizing your configuration](#configuration).

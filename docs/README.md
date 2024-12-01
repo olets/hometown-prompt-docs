@@ -1,5 +1,9 @@
 # Hometown Prompt ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/olets/hometown-prompt) ![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/olets/hometown-prompt/latest)
 
+:::danger Heads Up
+v4 is coming. If you do advanced configuration, read [the v3.x -> v4.x migration guide](https://v4.hometown-prompt.olets.dev/migrating-between-versions) and/or read about [pinning v3.x](./installation.md).
+:::
+
 ![splash card: the text 'Hometown Prompt' as pink cursive neon lettering](/images/hometown-prompt-splash-card.png)
 
 **Hometown is a feature rich, high performance Git-aware zsh theme** with segments for the user, host, time, the current working directory and its parent, and —within a Git repo— detailed Git status. It is carefully designed to show a lot of information clearly.
