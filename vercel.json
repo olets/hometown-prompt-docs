@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm docs:build",
-  "installCommand": "pnpm install",
-  "outputDirectory": "docs/.vuepress/dist"
+  "buildCommand": "bun run docs:build",
+  "installCommand": "bun install",
+  "outputDirectory": "docs/.vitepress/dist"
 }
