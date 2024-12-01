@@ -180,6 +180,7 @@ export default defineConfig({
       },
       {
         text: "Features",
+        collapsed: false,
         items: [
           { link: "/all-the-git-info.md", text: "All the Git info" },
           { link: "/transient-prompt.md", text: "Transient prompt" },
@@ -191,6 +192,7 @@ export default defineConfig({
       { link: "/demo.md", text: "Demo" },
       {
         text: "Recipes",
+        collapsed: false,
         items: [
           {
             link: "/recipes/linebreak-before-first-prompt-in-restarted-shell.md",
