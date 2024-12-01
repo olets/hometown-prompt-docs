@@ -25,11 +25,11 @@ export const optionsData = {
   },
   HOMETOWN_SET_PSVAR: {
     description:
-      "If non-zero, Hometown will set the <code>psvar</code> array to ( drawn_time char_color char drawn_date whether_drawn_date_differs_from_today )",
+      "If non-zero, Hometown will set the <code>psvar</code> array to <code>( &lt;time> &lt;exit code-dependent color> &lt;char> &lt;date> &lt;whether date is different from today> )</code>. Used by the default <code>HOMETOWN_TRANSIENT_PROMPT_ENV</code> and scheduled refresh.",
     group: "Hometown Prompt content",
     value: { default: "1" },
     notes:
-      "Sets psvar to ( drawn_time char_color char drawn_date whether_drawn_date_differs_from_today )",
+      "Sets psvar to <code>( &lt;time> &lt;exit code-dependent color> &lt;char> &lt;date> &lt;whether date is different from today> )</code>. Used by the default <code>HOMETOWN_TRANSIENT_PROMPT_ENV</code> and scheduled refresh.",
     type: "integer",
     addedIn: "4.0.0",
   },
