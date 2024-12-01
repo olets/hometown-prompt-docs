@@ -1,4 +1,4 @@
-# Scheduled Refresh
+# Scheduled refresh
 
 Hometown can update the prompt on a schedule.
 
