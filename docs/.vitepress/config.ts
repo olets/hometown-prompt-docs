@@ -213,15 +213,15 @@ export default defineConfig({
         collapsed: false,
         items: [
           {
-            link: "/recipes/linebreak-before-first-prompt-in-restarted-shell.md",
+            link: "/linebreak-before-first-prompt-in-restarted-shell.md",
             text: "Linebreak before first prompt in restarted shell",
           },
           {
-            link: "/recipes/scheduled-refresh-with-static-time.md",
+            link: "/scheduled-refresh-with-static-time.md",
             text: "Scheduled refresh with static time",
           },
           {
-            link: "/recipes/timestamp-range-in-prompt.md",
+            link: "/timestamp-range-in-prompt.md",
             text: "Timestamp range in prompt",
           },
         ],
