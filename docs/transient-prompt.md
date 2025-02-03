@@ -12,7 +12,7 @@ The typical reason to use a transient prompt is to show additional information i
   - if the two were on different days, dates are added— "MM/DD/YY HH:MM:SS prompt drawn timestamp - MM/DD/YY HH:MM:SS next command execution start timestamp"
 
 ::: tip
-You can configure your prompt to show the same timestamp range as the default transient prompt. See [the recipe](./recipes/timestamp-range-in-prompt.md).
+You can configure your prompt to show the same timestamp range as the default transient prompt. See [the recipe](./timestamp-range-in-prompt.md).
 :::
 
 ## Customizing

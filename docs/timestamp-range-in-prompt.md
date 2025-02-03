@@ -1,6 +1,6 @@
 # Timestamp range in prompt
 
-To use to the same timestamp range as the [transient prompt](../transient-prompt.md), which is
+To use to the same timestamp range as the [transient prompt](/transient-prompt), which is
 
 > prompt drawn timestamp - next command execution start timestamp
 
