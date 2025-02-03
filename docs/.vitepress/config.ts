@@ -227,6 +227,10 @@ export default defineConfig({
         ],
       },
       {
+        link: "/integrations.md",
+        text: "Integrations",
+      },
+      {
         link: "/migrating-between-versions.md",
         text: "Migrating between versions",
       },
