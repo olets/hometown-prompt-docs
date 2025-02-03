@@ -2,9 +2,9 @@
 
 ## Highlights in 4.x
 
-- <Badge type="warning">Since 4.0.0</Badge> [Scheduled refresh](./scheduled-refresh.md)
+- <Badge type="warning">Since 4.0.0</Badge> [Scheduled refresh](/scheduled-refresh.md)
 
-- <Badge type="warning">Since 4.0.0</Badge> [Transient prompt](./transient-prompt.md)
+- <Badge type="warning">Since 4.0.0</Badge> [Transient prompt](/transient-prompt.md)
 
 ## Highlights in 3.x
 

@@ -74,7 +74,7 @@ v4 is compatible with most but not all plugin managers in the [zsh plugin manage
     exec zsh
     ```
 
-- **zsh4humans**: refer to the [zsh4humans integration](./integrations.md#zsh4humans).
+- **zsh4humans**: refer to the [zsh4humans integration](/integrations.md#zsh4humans).
 
 </details>
 :::

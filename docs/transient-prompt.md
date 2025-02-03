@@ -12,14 +12,14 @@ The typical reason to use a transient prompt is to show additional information i
   - if the two were on different days, dates are added— "MM/DD/YY HH:MM:SS prompt drawn timestamp - MM/DD/YY HH:MM:SS next command execution start timestamp"
 
 ::: tip
-You can configure your prompt to show the same timestamp range as the default transient prompt. See [the recipe](./timestamp-range-in-prompt.md).
+You can configure your prompt to show the same timestamp range as the default transient prompt. See [the recipe](/timestamp-range-in-prompt.md).
 :::
 
 ## Customizing
 
-You can customize the transient prompt with the same options as the regular prompt. Declare them within `HOMETOWN_TRANSIENT_PROMPT_ENV`. See [Options](./options.md).
+You can customize the transient prompt with the same options as the regular prompt. Declare them within `HOMETOWN_TRANSIENT_PROMPT_ENV`. See [Options](/options.md).
 
-Hometown can (and by default does) set `psvar`, providing some values which may be useful in transient prompt customization. See [Options](./options.md) and zsh's official [prompt expansion conditional substrings documentation](https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Conditional-Substrings-in-Prompts).
+Hometown can (and by default does) set `psvar`, providing some values which may be useful in transient prompt customization. See [Options](/options.md) and zsh's official [prompt expansion conditional substrings documentation](https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Conditional-Substrings-in-Prompts).
 
 ## Performance
 

@@ -71,23 +71,23 @@ Custom configuration ready for copying and pasting into your `.zshrc`:
 
 ### Hometown Prompt Configuration
 
-For detailed documentation of these options, see the [Options page](./options.md).
+For detailed documentation of these options, see the [Options page](/options.md).
 
 #### Content Options
 
-See [Options > Content](./options.md#content) for details.
+See [Options > Content](/options.md#content) for details.
 
 <OptionsConfigurationComponent group="hometown prompt content"/>
 
 #### Layout Options
 
-See [Options > Layout](./options.md#layout) for details.
+See [Options > Layout](/options.md#layout) for details.
 
 <OptionsConfigurationComponent group="hometown prompt layout"/>
 
 #### Transient Prompt Options
 
-See [Options > Layout](./options.md#transient-prompt) for details.
+See [Options > Layout](/options.md#transient-prompt) for details.
 
 <OptionsConfigurationComponent group="hometown prompt transient prompt"/>
 

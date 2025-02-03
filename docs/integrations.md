@@ -51,7 +51,7 @@ zstyle :z4h:olets/hometown-prompt postinstall z4h-reinstall-with-github-git-clon
 z4h load olets/hometown-prompt
 ```
 
-Or you can write a custom script. Read [Installation&nbsp;>&nbsp;Manual](./installation.md#manual)'s note on GitHub's REST API. You'll indentify the latest release's associated tag, use that to determine the archive URL to download, and then extract the archive into `Z4H_PACKAGE_DIR`. The following pattern is recommended. (Contributions of a full solution are welcome.)
+Or you can write a custom script. Read [Installation&nbsp;>&nbsp;Manual](/installation.md#manual)'s note on GitHub's REST API. You'll indentify the latest release's associated tag, use that to determine the archive URL to download, and then extract the archive into `Z4H_PACKAGE_DIR`. The following pattern is recommended. (Contributions of a full solution are welcome.)
 
 ```shell
 # .zshrc
