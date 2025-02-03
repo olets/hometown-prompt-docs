@@ -6,7 +6,7 @@ Hometown may work with [zsh4humans](https://github.com/romkatv/zsh4humans).
 
 ::: warning Warning
 
-Note that zsh4humans (z4h) expects you to use powerlevel10k. In my brief testing the below solution _seems_ to work, but I'm looking for the prompt to be correct, not testing z4h.
+zsh4humans (z4h) expects you to use powerlevel10k. In my brief testing the below solution _seems_ to work, but I'm looking for the prompt to be correct, not testing z4h.
 
 romkatv has this to say about disabling powerlevel10k in z4h:
 
