@@ -34,6 +34,26 @@ export const optionsData = {
     addedIn: "4.0.0",
   },
 
+  // Group: Hometown Prompt scheduled refresh
+  HOMETOWN_REFRESH_FUNCTION: {
+    description: "Function run every <code>HOMETOWN_REFRESH_INTERVAL</code>",
+    group: "Hometown Prompt scheduled refresh",
+    value: {
+      default:
+        "if (( HOMETOWN_SET_PSVAR && ! psvar[5] )); then<br>  _hometown_set_date_psvar<br>fi<br><br>_git_prompt_kit_update_git",
+    },
+    type: "function",
+    addedIn: "4.0.0",
+  },
+  HOMETOWN_REFRESH_INTERVAL: {
+    description:
+      "If non-zero, run <code>HOMETOWN_REFRESH_FUNCTION</code> every this many seconds.",
+    group: "Hometown Prompt scheduled refresh",
+    value: { default: "0" },
+    type: "integer",
+    addedIn: "4.0.0",
+  },
+
   // GROUP: Hometown Prompt layout
   HOMETOWN_LINEBREAK_AFTER_GIT_REF: {
     description: "If non-zero, the Git ref info* is followed by a line break",
