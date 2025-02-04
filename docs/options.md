@@ -16,6 +16,10 @@ Read about Git Prompt Kit's options in the [Git Prompt Kit's options documentati
 
 <OptionsComponent group="Hometown Prompt layout"/>
 
+## Scheduled refresh
+
+<OptionsComponent group="Hometown Prompt scheduled refresh"/>
+
 ## Transient prompt
 
 <OptionsComponent group="Hometown Prompt transient prompt"/>

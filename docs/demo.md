@@ -85,6 +85,12 @@ See [Options > Layout](/options.md#layout) for details.
 
 <OptionsConfigurationComponent group="hometown prompt layout"/>
 
+#### Scheduled refresh
+
+See [Options > Scheduled refresh](/options.md#scheduled-refresh) for details.
+
+<OptionsConfigurationComponent group="Hometown Prompt scheduled refresh"/>
+
 #### Transient Prompt Options
 
 See [Options > Layout](/options.md#transient-prompt) for details.
