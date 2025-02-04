@@ -1,1 +1,5 @@
 @import "default-theme-overrides.css";
+
+:root {
+    --prompt-gap: calc(5rem / 16);
+}
