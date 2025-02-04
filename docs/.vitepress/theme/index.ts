@@ -74,7 +74,7 @@ export default {
 
     app.component(
       "ContextConfigurationComponent",
-      ContextConfigurationComponent
+      ContextConfigurationComponent,
     );
     app.component("CwdComponent", CwdComponent);
     app.component("DeletedComponent", DeletedComponent);
@@ -95,7 +95,7 @@ export default {
     app.component("NewComponent", NewComponent);
     app.component(
       "OptionsConfigurationComponent",
-      OptionsConfigurationComponent
+      OptionsConfigurationComponent,
     );
     app.component("OptionsComponent", OptionsComponent);
     app.component("PromptComponent", PromptComponent);
