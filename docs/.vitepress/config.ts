@@ -151,6 +151,10 @@ export default defineConfig({
 
     editLink: undefined,
     lastUpdated: undefined,
+    logo: {
+      alt: "Hometown Prompt Logo",
+      src: "/android-chrome-256x256.png",
+    },
     nav: [
       {
         text: "v4",
