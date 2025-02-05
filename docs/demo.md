@@ -1,7 +1,7 @@
 # Interactive Demo & Configurator
 
-:::danger Heads Up
-v4 is coming. If you do advanced configuration, read [the v3.x -> v4.x migration guide](https://v4.hometown-prompt.olets.dev/migrating-between-versions) and/or read about [pinning v3.x](./installation.md).
+:::tip Heads Up
+v4 is out. See [the v3.x -> v4.x migration guide](https://v4.hometown-prompt.olets.dev/migrating-between-versions.html#migrating-from-v3) and/or read about [pinning v3.x](./installation.md)
 :::
 
 On this page you can see how Hometown Prompt responds to [context](#context) (user, host, Git status, etc).
@@ -21,7 +21,7 @@ Custom content and the prompt character are printed with [prompt expansion](http
 <div style="
   background-color: var(--c-bg);
   box-shadow: 0 0 1rem 1rem var(--c-bg);
-  position: sticky;   
+  position: sticky;
   top: var(--navbar-height);
   z-index: 10;
 ">

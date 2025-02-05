@@ -1,7 +1,7 @@
 # Options
 
-:::danger Heads Up
-v4 is coming. If you do advanced configuration, read [the v3.x -> v4.x migration guide](https://v4.hometown-prompt.olets.dev/migrating-between-versions) and/or read about [pinning v3.x](./installation.md).
+:::tip Heads Up
+v4 is out. See [the v3.x -> v4.x migration guide](https://v4.hometown-prompt.olets.dev/migrating-between-versions.html#migrating-from-v3) and/or read about [pinning v3.x](./installation.md)
 :::
 
 <!-- DUPE demo.md, options.md -->
