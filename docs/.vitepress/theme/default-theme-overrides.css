@@ -7,73 +7,72 @@ and reformatted
 :is(.vp-external-link-icon,
   .vp-doc a[href*='://'],
   .vp-doc a[target='_blank']) {
-  &:not(.no-icon) {
-    &::after {
-      color: currentColor;
-      height: 1em;
-      margin-bottom: -0.1em;
-      margin-top: 0;
-      width: 1em;
+    &:not(.no-icon) {
+        &::after {
+            color: currentColor;
+            height: 1em;
+            margin-bottom: -0.1em;
+            margin-top: 0;
+            width: 1em;
+        }
     }
-  }
 }
 
-.vp-code-group input:focus-visible+label::before {
-  border-radius: 6px;
-  border: 2px solid var(--vp-code-tab-active-bar-color);
-  bottom: 2px;
-  content: '';
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.vp-doc [class*='language-'] {
-
-  /* Markdown code block copy button */
-  >button.copy {
-    opacity: 1;
-    border: none;
+.vp-code-group input:focus-visible + label::before {
+    border-radius: 6px;
+    border: 2px solid var(--vp-code-tab-active-bar-color);
+    bottom: 2px;
+    content: "";
+    left: 0;
+    position: absolute;
     right: 0;
-    top: 1.5rem;
-  }
+    top: 0;
+}
 
-  /* Markdown code block language */
-  >span.lang {
-    right: 1rem;
-    font-size: 14px;
-    top: 0.2rem;
-  }
+.vp-doc [class*="language-"] {
+    /* Markdown code block copy button */
+    > button.copy {
+        opacity: 1;
+        border: none;
+        right: 0;
+        top: 1.5rem;
+    }
 
-  /* Markdown code block */
-  code {
-    padding-right: 40px;
-  }
+    /* Markdown code block language */
+    > span.lang {
+        right: 1rem;
+        font-size: 14px;
+        top: 0.2rem;
+    }
 
-  /* Markdown code block language */
-  >span.lang {
-    right: 1rem;
-    font-size: 14px;
-    top: 0.2rem;
-  }
+    /* Markdown code block */
+    code {
+        padding-right: 40px;
+    }
+
+    /* Markdown code block language */
+    > span.lang {
+        right: 1rem;
+        font-size: 14px;
+        top: 0.2rem;
+    }
 }
 
 .vp-doc {
-  p {
-    line-height: inherit;
-  }
+    p {
+        line-height: inherit;
+    }
 
-  .custom-block p {
-    line-height: inherit;
-  }
+    .custom-block p {
+        line-height: inherit;
+    }
 }
 
 .VPLocalNav,
 .VPNavScreen {
-  >.container {
-    max-width: none;
-  }
+    > .container {
+        max-width: none;
+    }
 }
 
 /* sidebar */
@@ -82,19 +81,19 @@ and reformatted
 .VPLocalNav .menu,
 .VPNav .VPNavScreenMenuLink,
 .VPNavScreenAppearance .text {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 .VPFlyout .VPMenu .label {
-  font-size: inherit;
+    font-size: inherit;
 }
 
 .VPNav .VPNavScreenAppearance {
-  padding: 0;
+    padding: 0;
 
-  .text {
-    color: inherit;
-  }
+    .text {
+        color: inherit;
+    }
 }
 
 .menu .menu-text,
@@ -102,9 +101,9 @@ and reformatted
 .DocSearch-Button .DocSearch-Button-Placeholder,
 .DocSearch-Button .DocSearch-Button-Key:first-child:after,
 .DocSearch-Button .DocSearch-Button-Key {
-  @media (min-width: 62.5rem) {
-    font-size: 1rem;
-  }
+    @media (min-width: 62.5rem) {
+        font-size: 1rem;
+    }
 }
 
 .VPFlyout .VPMenu .label,
@@ -112,11 +111,11 @@ and reformatted
 .DocSearch-Button .DocSearch-Button-Key:first-child:after,
 .DocSearch-Button .DocSearch-Button-Key,
 .DocSearch-Button .DocSearch-Search-Icon {
-  color: var(--vp-c-text-1);
+    color: var(--vp-c-text-1);
 }
 
 .DocSearch-Button .DocSearch-Button-Keys {
-  border-color: var(--vp-c-text-1);
+    border-color: var(--vp-c-text-1);
 }
 
 textarea {
@@ -133,7 +132,7 @@ textarea {
 *
 * Each colors have exact same color scale system with 3 levels of solid
 * colors with different brightness, and 1 soft color.
-* 
+*
 * - `XXX-1`: The most solid color used mainly for colored text. It must
 *   satisfy the contrast ratio against when used on top of `XXX-soft`.
 *
@@ -169,12 +168,12 @@ textarea {
 * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-code-color: inherit;
-  --vp-code-font-size: inherit;
-  --vp-code-lang-color: var(--vp-code-tab-text-color);
-  --vp-custom-block-font-size: 1em;
-  --vp-sidebar-width: 320px;
-  /* 
+    --vp-code-color: inherit;
+    --vp-code-font-size: inherit;
+    --vp-code-lang-color: var(--vp-code-tab-text-color);
+    --vp-custom-block-font-size: 1em;
+    --vp-sidebar-width: 320px;
+    /*
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
