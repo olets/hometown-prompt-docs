@@ -4,6 +4,7 @@
     --prompt-gap: calc(5rem / 16);
 }
 
+/* Center asciinema embed play icon overlay */
 .ap-player .ap-overlay-start .ap-play-button {
     position: relative !important;
 }

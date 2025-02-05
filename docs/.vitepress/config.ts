@@ -4,10 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   vite: {
     ssr: {
-      noExternal: [
-        // If there are other packages that need to be processed by Vite, you can add them here.
-        "@nolebase/ui-asciinema",
-      ],
+      noExternal: ["@nolebase/ui-asciinema"],
     },
   },
   title: "Hometown Prompt",

@@ -4,7 +4,7 @@ Hometown has a "transient prompt" feature. When transient prompt is enabled (as 
 
 > Transient prompt is a type of "dynamic" prompt: it changes once, right after you execute a command (that is, right after you hit <kbd>Enter</kbd>).
 
-<!--@include: ./parts/screencast.md  -->
+<!--@include: ./parts/screencast.md -->
 
 The typical reason to use a transient prompt is to show additional information in the current prompt than in past prompts. That's how Hometown's works by default. The default Hometown transient prompt
 

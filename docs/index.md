@@ -4,7 +4,7 @@
 
 **Hometown is a feature rich, high performance Git-aware zsh theme** with segments for the user, host, time, the current working directory and its parent, and —within a Git repo— detailed Git status. It is carefully designed to show a lot of information clearly.
 
-<!--@include: ./parts/screencast.md  -->
+<!--@include: ./parts/screencast.md -->
 
 ## Appearance
 
