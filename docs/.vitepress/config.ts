@@ -2,6 +2,14 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    ssr: {
+      noExternal: [
+        // If there are other packages that need to be processed by Vite, you can add them here.
+        "@nolebase/ui-asciinema",
+      ],
+    },
+  },
   title: "Hometown Prompt",
   description: "A feature rich, high performance Git-aware zsh theme",
   head: [
