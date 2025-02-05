@@ -40,7 +40,7 @@ export const optionsData = {
     group: "Hometown Prompt scheduled refresh",
     value: {
       default:
-        "if (( HOMETOWN_SET_PSVAR && ! psvar[5] )); then<br>  _hometown_set_date_psvar<br>fi<br><br>_git_prompt_kit_update_git",
+        "(( HOMETOWN_SET_PSVAR && ! psvar[5] )) && _hometown_set_date_psvar; _git_prompt_kit_update_git",
     },
     type: "function",
     addedIn: "4.0.0",
