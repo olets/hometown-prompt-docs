@@ -119,6 +119,10 @@ and reformatted
   border-color: var(--vp-c-text-1);
 }
 
+textarea {
+    border: 1px solid var(--vp-c-divider);
+}
+
 /**
 * Customize default theme styling by overriding CSS variables:
 * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
