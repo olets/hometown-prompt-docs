@@ -5,7 +5,7 @@ import "asciinema-player/dist/bundle/asciinema-player.css";
 
 Here's the default configuration in action.
 
-<!-- DUPE hometown-prompt-docs@v4 docs/parts/screencast.md, zsh-transient-prompt@v1 docs/parts/screencast.md -->
+<!-- DUPE hometown-prompt@v4 README.md hometown-prompt-docs@v4 docs/parts/screencast.md, zsh-transient-prompt@v1 docs/parts/screencast.md -->
 <details><summary>Toggle to show/hide an annotated transcript</summary>
 
 ```shell
