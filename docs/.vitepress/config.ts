@@ -243,6 +243,10 @@ export default defineConfig({
         link: "/migrating-between-versions.md",
         text: "Migrating between versions",
       },
+      {
+        link: "/troubleshooting.md",
+        text: "Troubleshooting",
+      },
     ],
     socialLinks: [],
   },
