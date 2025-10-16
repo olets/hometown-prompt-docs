@@ -4,26 +4,30 @@ function addTrackingToNav() {
       els: Array.from(
         document.querySelectorAll('.navbar-items a[aria-label="Changelog"]'),
       ),
-      trackedEventId: "1IM3F81U",
+      fathomTrackedEventId: "1IM3F81U",
+      umamiTrackedEventId: "Click navbar Changelog link",
     },
     {
       els: Array.from(
         document.querySelectorAll('.navbar-items a[aria-label="License"]'),
       ),
-      trackedEventId: "FLLTLBBH",
+      fathomTrackedEventId: "FLLTLBBH",
+      umamiTrackedEventId: "Click navbar License link",
     },
     {
       els: Array.from(
         document.querySelectorAll('.navbar-items a[aria-label="GitHub"]'),
       ),
-      trackedEventId: "UDQTYUYT",
+      fathomTrackedEventId: "UDQTYUYT",
+      umamiTrackedEventId: "Click navbar GitHub link",
     },
   ];
 
   for (const link of links) {
-    link.els.forEach((el) =>
-      el.setAttribute("data-track-event-id", link.trackedEventId),
-    );
+    link.els.forEach((el) => {
+      el.setAttribute("data-track-fathom-event-id", link.fathomTrackedEventId);
+      el.setAttribute("data-track-umami-event-id", link.umamiTrackedEventId);
+    });
   }
 }
 
@@ -31,16 +35,23 @@ function trackLinks() {
   const links = document.getElementsByTagName("a");
 
   for (const link of links) {
-    const trackedEventId = link.getAttribute("data-track-event-id");
+    const fathomTrackedEventId = link.getAttribute(
+      "data-track-fathom-event-id",
+    );
 
-    if (!trackedEventId) {
-      continue;
+    const umamiTrackedEventId = link.getAttribute("data-track-umami-event-id");
+
+    if (trackedEventId && window?.fathom) {
+      link.addEventListener("click", () => {
+        window.fathom?.trackGoal(fathomTrackedEventId, 0);
+      });
     }
 
-    link.addEventListener("click", () => {
-      window?.fathom?.trackGoal(trackedEventId, 0);
-      window?.umami?.track(trackedEventId.substring(0, 50));
-    });
+    if (trackedEventId && window?.umami) {
+      link.addEventListener("click", () => {
+        window.umami?.track(umamiTrackedEventId);
+      });
+    }
   }
 }
 
@@ -64,6 +75,7 @@ function trackSearch() {
         // closed
         document.documentElement.removeAttribute(openAttribute);
         window?.fathom?.trackGoal("OBGWG9QM", 0);
+        window?.umami?.track("Close search dialog");
       }
 
       return;
@@ -76,6 +88,7 @@ function trackSearch() {
     // opened
     document.documentElement.setAttribute(openAttribute, "");
     window?.fathom?.trackGoal("LGQFSSLL", 0);
+    window?.umami?.track("Open search dialog");
   }
 
   function watchHitEls() {
@@ -86,6 +99,7 @@ function trackSearch() {
         document.documentElement.removeAttribute(openAttribute);
 
         window?.fathom?.trackGoal("ULRIYLIO", 0);
+        window?.umami?.track("Click search dialog hit");
       });
     }
   }
@@ -99,7 +113,7 @@ function trackSearch() {
 }
 
 // "if not dev mode"
-if (window?.fathom?.trackGoal) {
+if (window?.fathom?.trackGoal || window?.umami?.track) {
   addTrackingToNav();
   trackLinks();
   trackSearch();
