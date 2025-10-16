@@ -3,7 +3,7 @@ import { h } from "vue";
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import "./style.css";
-import { trackLinksAndFathomEvents } from "./analytics";
+import { trackLinksAndTrackedEvents } from "./analytics";
 import { scrollableRegionsHaveKeyboardAccess } from "./accessibility";
 
 import { createPinia } from "pinia";
@@ -57,7 +57,7 @@ export default {
       "doc-before": () => h(VersionNotice),
       "layout-bottom": () => {
         scrollableRegionsHaveKeyboardAccess();
-        trackLinksAndFathomEvents();
+        trackLinksAndTrackedEvents();
       },
     });
   },
